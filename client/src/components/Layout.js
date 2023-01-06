@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/LayoutStyles.css";
 import { adminMenu, userMenu } from "./../Data/data";
-
+import doc from './doc.png'
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Badge, message } from "antd";
@@ -23,10 +23,10 @@ const Layout = ({ children }) => {
       <div className="main">
         <div className="layout">
           <div className="sidebar">
-            <div className="logo">
-              <h6>DOC APP</h6>
-              <hr />
-            </div>
+          <div className="logo">
+                <img className='logo' src={doc} alt="logo" />
+                <hr />
+                </div>
             <div className="menu">
               {SidebarMenu.map((menu) => {
                 const isActive = location.pathname === menu.path;

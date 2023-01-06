@@ -10,7 +10,7 @@
   min-height: 100%;
   width: 300px;
   border-radius: 5px;
-  background-color: rgb(51, 1, 1);
+  background-color: rgb(118, 45, 212);
   box-shadow: 0 0 2px gray;
   margin-right: 20px;
   color: white;
@@ -59,7 +59,7 @@
 }
 .active a,
 .active i {
-  color: rgb(51, 1, 1);
+  color: rgb(118, 45, 212);
 }
 
 .header-content {
@@ -80,4 +80,11 @@
   color: blue;
   margin: 0 10px;
   text-transform: uppercase;
+}
+
+.logo{
+  height: 20vh;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
 }

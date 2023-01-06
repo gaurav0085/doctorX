@@ -33,7 +33,7 @@ const ApplyDoctor = () => {
       }
     } catch (error) {
       dispatch(hideLoading());
-      console.log(error);
+      console.log(error.response.data);
       message.error("Somthing Went Wrrong ");
     }
   };
@@ -65,12 +65,12 @@ const ApplyDoctor = () => {
           </Col>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Phone No"
+              label="Phone "
               name="phone"
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your contact no" />
+              <Input type="text" placeholder="your contact number" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
@@ -83,11 +83,7 @@ const ApplyDoctor = () => {
               <Input type="email" placeholder="your email address" />
             </Form.Item>
           </Col>
-          <Col xs={24} md={24} lg={8}>
-            <Form.Item label="Website" name="website">
-              <Input type="text" placeholder="your website" />
-            </Form.Item>
-          </Col>
+          
           <Col xs={24} md={24} lg={8}>
             <Form.Item
               label="Address"
@@ -123,12 +119,12 @@ const ApplyDoctor = () => {
           </Col>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Fees Per Cunsaltation"
-              name="feesPerCunsaltation"
+              label="Fees Per Consultation"
+              name="feesPerConsultation"
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your contact no" />
+              <Input type="text" placeholder="Fees Charged per consultation" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
